@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confronto numeri</title>
+    <link rel='stylesheet' href='./node_modules/bootstrap/dist/css/bootstrap.min.css'/>
+</head>
+<body class="bg-dark">
+    <main>
+        <div class="container-fluid">
+            <h1 class="text-white text-center">
+                Confronto Numeri
+            </h1>
+            <div class="row mt-5">
+                <div class="col col-3 d-flex flex-column offset-3">
+                    <h3 class="text-white text-center">
+                        Giocatore 1
+                    </h3>
+                    <input type="number" id="giocatore1" min="1" max="100" required>
+                </div>
+                <div class="col col-3 d-flex flex-column">
+                    <h3 class="text-white text-center">
+                        Giocatore 2
+                    </h3>
+                    <input type="number" id="giocatore2" min="1" max="100" required>
+                </div>
+                <div class="col col-12 d-flex justify-content-center mt-3">
+                    <button id="avviaButton" class="btn btn-light">Avvia confronto</button>
+                </div>
+                <div class="col col-3">
+                    <div id="risultato" style="display: none;" class="text-white offset-2"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
